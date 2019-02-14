@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "ConsumeCustomer";
+}
+<script src="~/Scripts/jquery-3.3.1.js"></script>
+<h2>ConsumeCustomer</h2>
+
+<body>
+    <div>
+        <script language="javascript">
+            $.get("http://localhost:2136/customer/GetCustomer", null, Callback)
+            debugger;
+                function Callback(Data)
+                {
+                    debugger;
+                    alert(Data.CustomerName);
+                }
+            
+        </script>
+    </div>
+</body>
